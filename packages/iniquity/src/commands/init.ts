@@ -75,8 +75,8 @@ export class Init implements yargs.CommandModule {
     }
     public handler(argv: yargs.Arguments) {
         if (!argv.help || !argv.version) {
-            copyfiles([path.join(__dirname, "../example/*"), "."], { up: true, all: true }, (err) => {})
-            copyfiles([path.join(__dirname, "../example/.iniquity/*"), ".iniquity"], { up: true, all: true }, (err) => {})
+            copyfiles([path.join(__dirname, "../../../src/example/*"), "."], { up: true, all: true }, (err) => {})
+            copyfiles([path.join(__dirname, "../../../src/example/.iniquity/*"), ".iniquity"], { up: true, all: true }, (err) => {})
 
             console.log("Iniquity system initialized.")
         }
